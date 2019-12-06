@@ -47,6 +47,7 @@ def roman_to_int(s)
     end
 
     if temp.zero? && [1, 10, 100].include?(value)
+      p [value, temp]
       temp = value
     else
       sum += value
@@ -56,4 +57,4 @@ def roman_to_int(s)
   sum
 end
 
-p roman_to_int('IV')
+p roman_to_int("MDCCCLXXXIV")

@@ -5,6 +5,7 @@ def str_str(haystack, needle)
   # haystack.index(needle) || -1
 
   return 0 if needle.empty?
+  return -1 if haystack.size < needle.size
 
   index = -1
   0.upto(haystack.size-1) do |i|
